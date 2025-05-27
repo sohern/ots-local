@@ -9,6 +9,11 @@
 	// mark the worksapce folder safe for git
 	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 
+    "remoteEnv": {
+        "AEM_EXTERNALIZER_AUTHOR": "https://localhost:44302",
+        "AEM_XWALK_AUE_ENDPOINT": "https://localhost:8000"
+    },
+
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	"features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
@@ -22,7 +27,12 @@
             "version": "11",
             "installMaven": true
         },
-        "ghcr.io/juan-ayala/devcontainer-features/aem-sdk:1": {}
+        "ghcr.io/juan-ayala/devcontainer-features/aem-sdk:1": {
+             "sdksDirectory": "${containerWorkspaceFolder}/.devcontainer"
+        },
+        "ghcr.io/juan-ayala/devcontainer-features/aem-universal-editor-service:1": {
+            "uesDownloadsDirectory": "${containerWorkspaceFolder}/.devcontainer"
+        }
     },
 
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -31,6 +41,10 @@
         34502,
         4503,
         34503,
-        8080
+        8080,
+        8001,
+        8000,
+        44302,
+        44303
     ]
 }

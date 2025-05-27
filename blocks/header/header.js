@@ -162,5 +162,13 @@ export default async function decorate(block) {
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
+
+  // Add a simple text announcement element
+  const announcement = document.createElement('div');
+  announcement.className = 'header-announcement';
+  announcement.textContent = 'Welcome to our site!';
+  navWrapper.append(announcement);
+
+  
   block.append(navWrapper);
 }
