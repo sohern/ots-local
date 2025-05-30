@@ -169,6 +169,5 @@ export default async function decorate(block) {
   announcement.textContent = 'Welcome to our site!';
   navWrapper.append(announcement);
 
-  
   block.append(navWrapper);
 }
