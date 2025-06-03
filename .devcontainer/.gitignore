@@ -1,2 +1,8 @@
 # AEM SDK zip files
 aem-sdk-*.zip
+
+# Universal Editor Service zip files
+universal-editor-service-*.zip
+
+# Z-scaler certificates
+zscaler-*.pem

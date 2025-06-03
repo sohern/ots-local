@@ -5,7 +5,7 @@
         "NODE_EXTRA_CA_CERTS": "/etc/ssl/certs/zscaler-chain.crt"
     },
 
-    // mark the worksapce folder safe for git
+    // Mark the worksapce folder safe for git
     "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 
     "remoteEnv": {
@@ -20,11 +20,6 @@
         },
         "ghcr.io/devcontainers/features/node:1": {
             "version": "20.9.0"
-        },
-        "ghcr.io/devcontainers/features/java:1": {
-            "jdkDistro": "zulu",
-            "version": "11",
-            "installMaven": true
         },
         "ghcr.io/juan-ayala/devcontainer-features/aem-sdk:1": {
             "sdksDirectory": "${containerWorkspaceFolder}/.devcontainer"
