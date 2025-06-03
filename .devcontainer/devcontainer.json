@@ -1,8 +1,8 @@
 {
     "name": "Adobe Experience Manager",
-    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "dockerFile": "Dockerfile",
     "containerEnv": {
-        "NODE_EXTRA_CA_CERTS": "/opt/local/share/curl/curl-ca-bundle.crt"
+        "NODE_EXTRA_CA_CERTS": "/etc/ssl/certs/zscaler-chain.crt"
     },
 
     // mark the worksapce folder safe for git
