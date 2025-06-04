@@ -13,7 +13,7 @@
         "AEM_XWALK_AUE_ENDPOINT": "https://localhost:8000"
     },
 
-    // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+    // 👇 Features to add to the devcontainer. More info: https://containers.dev/implementors/features.
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "configureZshAsDefaultShell": true
