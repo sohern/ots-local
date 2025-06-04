@@ -1,0 +1,2 @@
+# Universal Editor Service
+Download the Universal Editor Service from Adobe's [software distribution site](https://experience.adobe.com/#/downloads). Place the zip file in this directory. It should not get checked into source control. Then run the `start-ues` command in the dev container.
